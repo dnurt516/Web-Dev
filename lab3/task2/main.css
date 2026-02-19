@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: #000000;
+
+    padding: 10px 50px;
+}
+
+.header h1 {
+    color: #c7c5c5;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.userInput {
+    width: 700px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.userInput input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c7c5c5;
+    border-radius: 6px;
+}
+
+.userInput button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #3558e6;
+
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.main ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main li {
+    position: relative;
+    border: 1px solid hsl(0, 2%, 78%);
+    padding: 20px 50px 20px 80px;
+    display: flex;
+    align-items: center;
+}
+
+.main li:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.main li:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.main li input {
+    position: absolute;
+    left: 20px;
+    width: 17px;
+    height: 17px;
+}
+
+.main li button {
+    position: absolute;
+    right: 20px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 6px;
+    background: #ee4545;
+    color: #ffffff;
+}
+
+.main li.done {
+    text-decoration: line-through;
+    background: #9ef5b4;
+}
