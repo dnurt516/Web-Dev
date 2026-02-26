@@ -1,0 +1,27 @@
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.categories button {
+    border: 1px solid #999;
+    background: none;
+    padding: 10px 30px;
+    min-width: 200px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s ease-in-out;
+}
+
+.categories button:hover, .categories button.active {
+    background-color: #999;
+    color: #fff;
+}
+
+.welcome {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
