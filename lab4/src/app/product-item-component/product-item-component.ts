@@ -40,7 +40,7 @@ import { Product } from '../models/product.model';
           <div class="instPlan">
             <span class="payementType">В рассрочку</span>
             <div>
-              <span class="price">{{ product().price }} ₸</span>
+              <span class="price">{{ instPlanPrice() }} ₸</span>
               <span class="info">x24</span>
             </div>
           </div>

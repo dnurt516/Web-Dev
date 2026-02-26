@@ -338,7 +338,11 @@ export class ProductService {
     getProducts() { return this.products }
 
     deleteProduct(id : number) {
-        this.products.update(ps => ps.filter(p => p.id !== id));
+        const isConfirm = confirm("Вы точно хотите удалить этот товар?");
+
+        if (isConfirm) {
+            this.products.update(ps => ps.filter(p => p.id !== id));
+        }
     }
 
     likeProduct(id : number) {
