@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "84317de5-bc78-4de0-87d2-89daa283a486",
+		"name": "Online Shop API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"id": "5d051a3d-09a4-48c1-9ced-c7ed88ef62f1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category by ID",
+					"id": "2f3146f3-fbbd-4476-bb3d-e66a0db405d4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products by Category",
+					"id": "5b911b4c-dfcd-439d-8d11-c6f7169a32ea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"id": "5320db10-40a6-45a3-9ebc-5ef2e0f44944",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"id": "53b4de49-467f-4168-aa2b-1443f380d778",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"id": "44a9c88d-c54d-4a3c-bc0b-87fd6c0387f4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "82567f57-20ec-46be-b211-7dce299292e4"
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"id": "0356d756-2a7d-4029-a133-b847c8eee294",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product by ID",
+					"id": "1b96e4fa-0a3a-4c52-b17a-a2fd98b7500c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"id": "3840fa13-5de0-4d3d-b31b-960dcf889571",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"id": "501d3539-cc1c-400a-93d0-d5c45fa7d3c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"id": "69d193cf-c689-45c6-b26f-c17e6be65c5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/products/22/"
+					},
+					"response": []
+				}
+			],
+			"id": "893b571c-1ad7-4509-bd83-2365683da8c2"
+		}
+	]
+}
