@@ -7,11 +7,12 @@ import { Product } from '../models/product.model';
   imports: [ProductItemComponent],
   template: `
     <div class="productsList">
-      @for (p of products(); track p.id) {
+    @if (products().length === 0) { Товаров нет }  
+    @for (p of products(); track p.id) {
         <app-product-item-component [product]="p" (remove)="onRemove($event)" (like)="onLike($event)">
 
         </app-product-item-component>
-      }
+      } 
     </div>
   `,
   styleUrl: './product-list-component.css'

@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+li a {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: #cfcfcf;
+}
+
+li:hover a {
+    color: white;
+}
