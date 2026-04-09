@@ -1,20 +1,23 @@
-from models import Animal, Dog, Cat
+from models import Animal, Dog, Cat, Rat
 def main():
     a1 = Animal("GenericAnimal", 5, "Unknown")
     d1 = Dog("Rex", 3, "Labrador")
     c1 = Cat("Whiskers", 2, "Black")
+    e1 = Rat("Mike", 6, "DDDDD")
+    
+    print(e1.getType())
 
-    animals = [a1, d1, c1]
-    for animal in animals:
-        print(animal)  
-        print(animal.info())  
-        print("Speak:", animal.speak())
+    # animals = [a1, d1, c1]
+    # for animal in animals:
+    #     print(animal)  
+    #     print(animal.info())  
+    #     print("Speak:", animal.speak())
 
       
-        if isinstance(animal, Dog):
-            print(animal.fetch("ball"))
-        elif isinstance(animal, Cat):
-            print(animal.scratch())
+    #     if isinstance(animal, Dog):
+    #         print(animal.fetch("ball"))
+    #     elif isinstance(animal, Cat):
+    #         print(animal.scratch())
         
 
 if __name__ == "__main__":

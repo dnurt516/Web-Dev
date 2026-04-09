@@ -25,6 +25,13 @@ class Dog(Animal):
     def fetch(self, item):
         return f"{self.name} fetches the {item}"
 
+class Rat(Animal):
+    def __init__(self, name, age, type):
+        super().__init__(name, age, "Rat")
+        self.type = type
+        
+    def getType(self):
+        return self.type
 
 class Cat(Animal):
     def __init__(self, name, age, color):
