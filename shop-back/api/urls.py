@@ -1,20 +1,21 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import CategoryViewSet, ProductViewSet
+from django.urls import path
+from api import views
 
-router = DefaultRouter() 
-router.register(r'categories', CategoryViewSet) 
-router.register(r'products', ProductViewSet) 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+urlpatterns = []
+if hasattr(views, 'ProductListAPIView'):
+    urlpatterns += [
+        path('products/', views.ProductListAPIView.as_view()),
+        path('products/<int:product_id>/', views.ProductDetailAPIView.as_view()),
+    ]
+elif hasattr(views, 'products_list'):
+    urlpatterns += [
+        path('products/', views.products_list),
+        path('products/<int:product_id>/', views.product_detail),
+    ]
 
-
-# new_cat = Category.objects.create(name="Phones")
-# #Product.objects.create(
-#     name="iPhone 15", 
-#     price=450000, 
-#     description="New phone", 
-#     count=5, 
-#     category=new_cat
-# )
+if hasattr(views, 'CategoryListAPIView'):
+    urlpatterns += [
+        path('categories/', views.CategoryListAPIView.as_view()),
+        path('categories/<int:id>/', views.CategoryDetailAPIView.as_view()),
+        path('categories/<int:id>/products/', views.CategoryProductsAPIView.as_view()),
+    ]
