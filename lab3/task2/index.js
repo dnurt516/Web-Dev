@@ -1,4 +1,8 @@
 function addTask(value) {
+    const tasks = document.querySelectorAll('li');
+
+    if (tasks.length == 3) return false;
+
     const ul = document.querySelector('ul');
 
     const task = document.createElement('li');
@@ -42,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const addButton = document.querySelector('.userInput button');
 
     addButton.addEventListener('click', function() {
-        if (addInput.value.trim() === "") return false;
+        if (addInput.value.trim() === "" || addInput.value.trim().length < 3) return false;
 
         addTask(addInput.value);
         addInput.value = "";

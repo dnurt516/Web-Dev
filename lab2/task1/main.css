@@ -23,7 +23,7 @@
 }
 
 .login_header-bar#f {
-    padding-right: 32px;
+    padding-left: 32px;
     width: 580px;
 }
 
@@ -150,25 +150,25 @@ ul {
 
 
 
-.pageFooter {
+.footer {
     width: 980px;
     padding-top: 20px;
     margin: 0 auto;
     font-size: 12px;
     color: #737373;
-    }
+}
 
 .footer-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px 16px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .footer-list li {
   cursor: pointer;
+  font-size: 12px;
+  font-family: Helvetica;
+  margin: 5px 5px 0;
 }
 
 .footer-list li:hover {
@@ -189,4 +189,52 @@ ul {
 .meta {
   margin-top: 12px;
   color: #737373;
+}
+
+@media (max-width: 1040px) {
+    .login_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .login_header-logo {
+        padding-top: 0px;
+    }
+
+    .login_header-bar {
+        width: auto !important;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login_header_container {
+        width: 100%;
+    }
+
+    .login_header-desc {
+        width: auto !important;
+        max-width: 750px !important;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    .footer-list {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
 }

@@ -342,6 +342,9 @@ export class ProductService {
 
         if (isConfirm) {
             this.products.update(ps => ps.filter(p => p.id !== id));
+            if (this.products.length === 0) {
+                
+            }
         }
     }
 
