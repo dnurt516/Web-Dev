@@ -1,10 +1,21 @@
 from django.urls import path
-from . import views
+from api import views
 
-urlpatterns = [
-    path('products/', views.product_list), 
-    path('products/<int:id>/', views.product_detail), 
-    path('categories/', views.category_list), 
-    path('categories/<int:id>/', views.category_detail), 
-    path('categories/<int:id>/products/', views.category_products)
-]
+urlpatterns = []
+if hasattr(views, 'ProductListAPIView'):
+    urlpatterns += [
+        path('products/', views.ProductListAPIView.as_view()),
+        path('products/<int:product_id>/', views.ProductDetailAPIView.as_view()),
+    ]
+elif hasattr(views, 'products_list'):
+    urlpatterns += [
+        path('products/', views.products_list),
+        path('products/<int:product_id>/', views.product_detail),
+    ]
+
+if hasattr(views, 'CategoryListAPIView'):
+    urlpatterns += [
+        path('categories/', views.CategoryListAPIView.as_view()),
+        path('categories/<int:id>/', views.CategoryDetailAPIView.as_view()),
+        path('categories/<int:id>/products/', views.CategoryProductsAPIView.as_view()),
+    ]
